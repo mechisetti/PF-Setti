@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 html {
@@ -65,6 +66,10 @@ p {
     font-size: 2rem;
     font-weight: lighter;
     text-align: justify;
+}
+
+img {
+    max-width: 100%;
 }
 
 .barra-navegacion-pie-pagina li a {
