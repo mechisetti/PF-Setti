@@ -214,26 +214,41 @@
 
 /* inicio estilos sobre mi*/
 .texto-y-foto-sobre-mi {
-    border: solid 0.2rem #d4a373;
-    padding: 4rem;
-    display: flex;
-    overflow: hidden;
-    text-align: center; 
-    justify-content: center;
-    margin: 3rem;
+   display: grid;
+   grid-template-areas: 
+   "foto titulo"
+   "foto texto";
+   grid-template-columns: 385px 800px;
+   grid-template-rows: 300px 350px;
+   grid-column-gap: 6rem;
+   grid-row-gap: 1rem;
+   border: solid #dda15e;
+   margin: 2rem;
 }
 
+.titulo-sobre-mi{
+   grid-area: titulo;
+   justify-items: center;
+   align-items: end;
+   align-content: center;
+   margin-left: 5rem;
+   margin-top: 6rem;
+}
 .imagen-personal {
-width: 35rem;
-margin-bottom: 3rem;
-margin-left: 2rem;
-justify-content: space-between;
-margin: 0.5rem 2rem
+grid-area: foto;
+justify-items: center;
+justify-content: center;
+align-items: center;
+align-content: center;
+padding: 4rem;
+margin-top: 3rem;
 }
 
 .sobre-mi {
     font-weight: 400;
-    margin: 0.5rem 2rem   
+    margin: 0.5rem 2rem;
+    grid-area: texto;
+   
 }
 /*Fin estilos sobre mi*/
 
@@ -256,6 +271,17 @@ margin: 0.5rem 2rem
     margin: 0.5rem;
 }
 
+.tips-y-recomendaciones div:hover {
+   border: solid 0.3rem #d4a373;
+   padding: 4rem;
+   display: inline-block;
+   overflow: hidden;
+   text-align: center; 
+   justify-content: space-between;
+   margin: 0.5rem;
+   background-color: #efebce;
+   transform: scale(1.1 , 1.1);
+}
 .noticias {
     display: flex;
     justify-content: center;
@@ -270,6 +296,20 @@ margin: 0.5rem 2rem
     text-align: center; 
     justify-content: center;
     margin: 0.5rem;
+   
+}
+
+.noticias div:hover {
+   border: solid 0.3rem #d4a373;
+   padding: 4rem;
+   display: inline-block;
+   overflow: hidden;
+   text-align: center; 
+   justify-content: center;
+   margin: 0.5rem;
+   background-color: #efebce;
+   transform: scale(1.1 , 1.1); 
+   
 }
 
 .dolar {
