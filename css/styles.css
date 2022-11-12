@@ -51,12 +51,11 @@
  
  h1 {
     color: #d4a373;
-    font-size: 5rem;
-    font-weight: bold;
-   
+    font-size: 6rem;
+    font-weight: bold;  
  }
- 
- p {
+
+  p {
     color: #283618;
     font-weight: bold;
     font-size: 2rem;
@@ -182,6 +181,7 @@
       "bienvenida bienvenida"
       "aproximacion-inicial aproximacion-inicial"
       "footer-index footer-index"; 
+   padding: 2rem;
   }
   .header {
     justify-self: stretch; 
@@ -309,7 +309,7 @@ margin-top: 3rem;
    margin: 0.5rem;
    background-color: #efebce;
    transform: scale(1.1 , 1.1); 
-   
+
 }
 
 .dolar {
