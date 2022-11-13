@@ -8,7 +8,11 @@
  html {
     font-size: 62.5%;
  }
- 
+
+ a {
+   text-decoration: none;
+ }
+
  body {
     font-family:'Montserrat', sans-serif; 
     background-color: #e9edc9; 
@@ -125,6 +129,7 @@
  .bienvenida .cinque-terre { 
     width: 260rem; 
     height: 50rem;
+    padding-right: 2rem;
  }
  
  .aproximacion-inicial {
@@ -181,8 +186,9 @@
       "bienvenida bienvenida"
       "aproximacion-inicial aproximacion-inicial"
       "footer-index footer-index"; 
-   padding: 2rem;
-  }
+      
+   }
+
   .header {
     justify-self: stretch; 
     grid-area: header; 
@@ -203,11 +209,13 @@
  
   .aproximacion-inicial {
     justify-self: stretch; 
-    grid-area: aproximacion-inicial; 
+    grid-area: aproximacion-inicial;
+   
   }
  
   .footer-index 
-  { grid-area: footer-index; }
+  { grid-area: footer-index;
+  }
 
 /*Fin estilos index*/
 
@@ -229,11 +237,12 @@
 .titulo-sobre-mi{
    grid-area: titulo;
    justify-items: center;
-   align-items: end;
+   align-items: center;
    align-content: center;
-   margin-left: 5rem;
+   margin-left: 1rem;
    margin-top: 6rem;
 }
+
 .imagen-personal {
 grid-area: foto;
 justify-items: center;
@@ -325,6 +334,19 @@ margin-top: 3rem;
 
 
 /*inicio estilos Galeria*/
+
+.carousel1 {
+   width: 42rem;
+   margin-left: 45rem;
+   margin-bottom: 4rem;
+   border: solid 0.3rem #d4a373;
+   padding: 2rem;
+   padding-bottom: 10rem;
+   background-color: white;
+}
+
+
+
 .galeria-imagenes-y-fotos div {
     display: inline-block;
     overflow: hidden;
@@ -340,7 +362,7 @@ margin-top: 3rem;
     margin: 2rem;    
     transform: scale(1.1 , 1.1);
  }
-.coliseo {
+.brooklyn {
     width: 40rem;
     height: 30rem;
 }
@@ -377,7 +399,8 @@ margin-top: 3rem;
 /*inicio estilos Contacto*/
 .titulo-form {
     margin-left: 2rem;
-}
+    margin-top: 2rem;
+    }
 
 fieldset {
     font-size: 3rem ;
@@ -397,6 +420,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
     }
 
 input {
