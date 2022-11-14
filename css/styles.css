@@ -200,7 +200,6 @@ ul{
  .container1 {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: .10fr .1fr 1.5fr 1.5fr 0.1fr; 
     gap: 1px 1px; 
     grid-template-areas: 
       "header header"
@@ -210,19 +209,17 @@ ul{
       "footer-index footer-index";     
    }
 
-   @media screen and (min-width:0px) and (max-width:767)
-{
-.container1
- { display: flex;
-   flex-wrap: wrap;
-     
-   } 
-}
-
 .header {
     justify-self: stretch; 
     grid-area: header; 
   }
+  @media screen and (max-width:768px) {
+   .header {
+     flex-direction: column;
+
+  }
+  }
+
   .hola {
     margin-left: 3rem;
     margin-top: 0.5rem;
@@ -236,11 +233,23 @@ ul{
     align-self: center; 
     grid-area: bienvenida; 
   }
+
+  @media screen and (max-width:768px) {
+   .bienvenida {
+     flex-direction: column;
+      }
+  }
  
   .aproximacion-inicial {
     justify-self: stretch; 
     grid-area: aproximacion-inicial;
    
+  }
+
+  @media screen and (max-width:768px) {
+   .aproximacion-inicial {
+     flex-direction: column;
+  }
   }
  
   .footer-index 
@@ -272,6 +281,16 @@ ul{
    margin: 2rem;
 }
 
+@media screen and (max-width:768px) {
+   .texto-y-foto-sobre-mi {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+  }
+  }
+
+  
 .titulo-sobre-mi{
    grid-area: titulo;
    justify-items: center;
