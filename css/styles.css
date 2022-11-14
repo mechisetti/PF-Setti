@@ -126,6 +126,12 @@
     text-align: center;
     font-size: 1.5rem;
  }
+
+ul{
+   text-decoration: none;
+   list-style-type: none;
+ }
+ 
  
  /*Fin de estilos generales*/
  
@@ -302,6 +308,12 @@ margin-top: 3rem;
     margin: 1rem;
 }
 
+@media screen and (max-width:768px) {
+   .tips-y-recomendaciones {
+     flex-direction: column;
+  }
+  }
+
 .tips-y-recomendaciones div {
     border: solid 0.3rem #d4a373;
     padding: 4rem;
@@ -323,11 +335,19 @@ margin-top: 3rem;
    background-color: #efebce;
    transform: scale(1.1 , 1.1);
 }
+
+
 .noticias {
     display: flex;
     justify-content: center;
     margin: 1rem;    
 }
+
+@media screen and (max-width:768px) {
+   .noticias {
+     flex-direction: column;
+  }
+  }
 
 .noticias div {
     border: solid 0.3rem #d4a373;
