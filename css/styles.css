@@ -2,20 +2,17 @@
  * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
     }
  
  html {
     font-size: 62.5%;
  }
 
- a {
-   text-decoration: none;
- }
-
+ 
  body {
     font-family:'Montserrat', sans-serif; 
-    background-color: #e9edc9; 
+    background-color: #e9edc9;
+        
  }
  img {
     max-width: 100%;
@@ -30,6 +27,24 @@
     justify-content: space-between;
     align-items: center;
  }
+
+ .navbar-nav a {
+   list-style-type: none;
+   font-size: 2rem;
+   color: black;
+   text-decoration: none;
+   background-color: #d4e09b;
+   margin: 0.5rem;
+   padding: 1.5rem 2.5rem;
+}
+
+.navbar-nav a:hover {
+   color: black;
+   font-weight: bold;
+   text-decoration: none;
+   background-color: #a3b18a;
+   padding: 1.5rem 2.5rem;
+}
  
  .barra-navegacion-principal li {
        
@@ -78,7 +93,7 @@
     line-height: 1.6;
     color: black;
     font-size: 1.5rem;
- }
+    }
  
  
  .barra-navegacion-pie-pagina li a:hover {
@@ -116,6 +131,7 @@
  
  
  /*inicio estilos index*/
+
  .bienvenida {
     display: flex;
     justify-content: center;
@@ -175,7 +191,7 @@
  }
   
  
- .container {
+ .container1 {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: .10fr .1fr 1.5fr 1.5fr 0.1fr; 
@@ -185,11 +201,19 @@
       "hola hola"
       "bienvenida bienvenida"
       "aproximacion-inicial aproximacion-inicial"
-      "footer-index footer-index"; 
-      
+      "footer-index footer-index";     
    }
 
-  .header {
+   @media screen and (min-width:0px) and (max-width:767)
+{
+.container1
+ { display: flex;
+   flex-wrap: wrap;
+     
+   } 
+}
+
+.header {
     justify-self: stretch; 
     grid-area: header; 
   }
@@ -217,10 +241,18 @@
   { grid-area: footer-index;
   }
 
+  .footer-index li {
+   text-decoration: none;
+   list-style-type: none;
+  }
+
+
+
 /*Fin estilos index*/
 
 
 /* inicio estilos sobre mi*/
+
 .texto-y-foto-sobre-mi {
    display: grid;
    grid-template-areas: 
@@ -345,6 +377,19 @@ margin-top: 3rem;
    background-color: white;
 }
 
+.titulo-carousel {
+   font-size: 2rem;
+   font-weight: bold;
+   color: white;
+}
+
+.explicacion {
+   font-size: 1.5rem;
+   font-style: oblique;
+   font-weight: bold;
+   color: #f4f1de;
+   text-align: inherit;   
+}
 
 
 .galeria-imagenes-y-fotos div {
@@ -403,7 +448,14 @@ margin-top: 3rem;
     }
 
 fieldset {
-    font-size: 3rem ;
+    font-size: 3rem;
+    background-color: #edede9;
+   }
+
+.info-contacto{
+   font-size: 2.5rem;
+   text-decoration: underline;
+   margin: 1rem;
 }
 
 label {
@@ -412,7 +464,7 @@ label {
     margin-left: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-}
+        }
 
 .formulario-contacto {
     width: 100%;
@@ -421,12 +473,14 @@ label {
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+       
     }
 
 input {
     width: 90%;
     height: 30px;
     margin: 1.5rem;
+    font-size: medium;
 }
 
 input:hover {
@@ -450,7 +504,7 @@ input:hover {
 textarea {
     margin-left: 1.5rem;
     margin-bottom: 2rem;
-}
+    }
 
 textarea:hover {
     margin-left: 1.5rem;
