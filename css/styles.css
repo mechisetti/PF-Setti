@@ -456,6 +456,17 @@ margin-top: 3rem;
    background-color: white;
 }
 
+@media screen and (max-width:768px) {
+   .carousel1 {
+      width: 42rem;
+      margin-left: 2rem;
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+      border: solid 0.3rem #d4a373;
+      padding: 2rem;
+      background-color: white;
+    }  }
+
 .titulo-carousel {
    font-size: 2rem;
    font-weight: bold;
