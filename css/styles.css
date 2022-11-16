@@ -16,6 +16,10 @@ body {
 img {
     max-width: 100%;
 }
+
+iframe {
+    max-width: 100%;
+}
  
 .logo {
     width: 20rem;
@@ -84,7 +88,7 @@ p {
 footer {
     background-color: #dda15e ;
 }
- 
+
 h2 {
     font-size: 4rem;
     color: #d5bdaf;
@@ -418,8 +422,9 @@ margin-top: 3rem;
 .carouseles {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-evenly;
 }
+
 .carousel1 {
    width: 42rem;
    margin-bottom: 4rem;
@@ -449,36 +454,26 @@ margin-top: 3rem;
 
 @media screen and (max-width:768px) {
    .carousel1 {
-      width: 42rem;
       margin-left: 2rem;
-      margin-bottom: 4rem;
       margin-top: 2rem;
-      border: solid 0.3rem #d4a373;
-      padding: 2rem;
-      background-color: white;
-   }  
+      flex-direction: column;
+      align-items: center;
+    }  
 
    .carousel2 {
-      width: 42rem;
       margin-left: 2rem;
-      margin-bottom: 4rem;
       margin-top: 2rem;
-      border: solid 0.3rem #d4a373;
-      padding: 2rem;
-      background-color: white;
+      flex-direction: column;
+      align-items: center;
    }  
 
    .carousel3 {
-      width: 42rem;
-      margin-left: 2rem;
-      margin-bottom: 4rem;
+    margin-left: 2rem;
       margin-top: 2rem;
-      border: solid 0.3rem #d4a373;
-      padding: 2rem;
-      background-color: white;
-}  
+      flex-direction: column;
+      align-items: center;  
+   }  
 }
-
 
 .titulo-carousel {
    font-size: 2rem;
@@ -522,8 +517,20 @@ margin-top: 3rem;
 }
 
 @media screen and (max-width:768px) {
-   .galeria-imagenes-y-fotos div:hover {
+    .galeria-imagenes-y-fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    .galeria-imagenes-y-fotos div:hover {
       transform: scale(0.9 , 0.9);
+      }
+
+      .videos iframe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
       }
 }
 
@@ -570,7 +577,7 @@ label {
 }
 
 .formulario-contacto {
-    width: 100%;
+    max-width: 100%;
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
