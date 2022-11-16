@@ -466,7 +466,7 @@ margin-top: 3rem;
    }  
 
    .carousel3 {
-    margin: 2rem;
+      margin: 2rem;
       flex-direction: column;
       align-items: center;  
    }  
@@ -535,6 +535,7 @@ margin-top: 3rem;
 
 /*inicio estilos Contacto*/
 
+
 .titulo-form {
     margin-left: 2rem;
     margin-top: 2rem;
@@ -552,6 +553,7 @@ text-align: center;
    margin-right: 1rem;
    font-size: 2rem;
    }
+  
 }
 
 fieldset {
@@ -575,12 +577,11 @@ label {
 
 .formulario-contacto {
     width: 100%;
-    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-}
+    }
 
 input {
     width: 90%;
@@ -622,5 +623,11 @@ textarea:hover {
     align-items: center;
     padding: 2rem 3rem 2rem 3rem;
 }
+
+/*@media screen and (max-width:768px) {
+    .formulario-contacto {
+        max-width: 100%;
+    }
+}*/
 
 /*Fin estilos Contacto*/
