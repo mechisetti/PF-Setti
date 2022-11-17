@@ -592,6 +592,34 @@ label {
     margin-top: 3rem;
 }
 
+
+@media screen and (max-width:768px) {
+    .formulario-contacto {
+        max-width:100%;
+    }
+}
+
+@media screen and (max-width:453px) {
+    .formulario-contacto {
+        max-width:100%;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .formulario-contacto {
+        max-width:100%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .formulario-contacto {
+        max-width:100%;
+        padding: 1rem;
+        font-size: inherit;
+    }
+}
+
 input {
     width: 90%;
     height: 30px;
@@ -619,6 +647,7 @@ input:focus {
 textarea {
     margin-left: 1.5rem;
     margin-bottom: 2rem;
+    width: 90%;
 }
 
 textarea:hover {
@@ -633,23 +662,5 @@ textarea:hover {
     padding: 2rem 3rem 2rem 3rem;
 }
 
-@media screen and (max-width:768px) {
-    .formulario-contacto {
-        max-width:100%;
-    }
-}
-
-@media screen and (max-width:453px) {
-    .formulario-contacto {
-        max-width:100%;
-    }
-}
-
-@media screen and (max-width:399px) {
-    .formulario-contacto {
-        max-width:100%;
-        padding: 2rem;
-    }
-}
 
 /*Fin estilos Contacto*/
