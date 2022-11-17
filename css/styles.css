@@ -132,10 +132,31 @@ ul{
     height: 50rem;
     padding-right: 2rem;
 }
+
+@media screen and (max-width:768px) {
+    .bienvenida .cinque-terre {  
+       width: 222rem;
+       height: 43rem;  
+    } 
+ }
+
+ @media screen and (max-width:399px) {
+    .bienvenida .cinque-terre {  
+       width: 222rem;
+       height: 28rem;
+       padding-right: 0rem;  
+    } 
+ }
  
 .aproximacion-inicial {
     display: flex;
     margin: 1rem;
+}
+
+.aproximacion-inicial img {
+    width: 30rem;
+    height: 22rem;
+    margin-bottom: 2rem;
 }
  
 .aproximacion-inicial div {
@@ -165,21 +186,6 @@ ul{
       transform: scale(0.95 , 0.95);  
    } 
 }
-
-.dumbo {
-    width: 30rem;
-    height: 22rem;
-}
- 
-.atardecer-NY {
-    width: 30rem;
-    height: 22rem;
-}
- 
-.foto-torre-eiffel {
-    width: 30rem;
-    height: 22rem;
-}
   
 .container1 {
     display: grid; 
@@ -198,7 +204,7 @@ ul{
    .container1 {
          display: grid; 
          grid-template-columns: 1fr 1fr; 
-         grid-template-rows: .1fr .1fr 0.5fr 1.5fr .1fr;
+         grid-template-rows: .1fr .1fr 0.5fr 2fr auto;
          gap: 1px 1px; 
    }
 }
@@ -231,14 +237,16 @@ ul{
 @media screen and (max-width:768px) {
    .bienvenida {
      flex-direction: column;
-   }
-
-   .bienvenida .cinque-terre { 
-         width: 222rem; 
-         height: 32rem;
-         padding-right: 3rem;
+     padding: 3rem;
+     margin-left: 0rem;
    }
 }
+
+@media screen and (max-width:399px) {
+    .bienvenida {
+     padding: 2rem;
+    }
+ }
  
 .aproximacion-inicial {
     justify-self: stretch; 
@@ -523,7 +531,7 @@ margin-top: 3rem;
       transform: scale(0.9 , 0.9);
       }
 
-      .videos iframe {
+      .videos {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -588,6 +596,7 @@ input {
     height: 30px;
     margin: 1.5rem;
     font-size: medium;
+
 }
 
 input:hover {
@@ -624,10 +633,23 @@ textarea:hover {
     padding: 2rem 3rem 2rem 3rem;
 }
 
-/*@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .formulario-contacto {
-        max-width: 100%;
+        max-width:100%;
     }
-}*/
+}
+
+@media screen and (max-width:453px) {
+    .formulario-contacto {
+        max-width:100%;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .formulario-contacto {
+        max-width:100%;
+        padding: 2rem;
+    }
+}
 
 /*Fin estilos Contacto*/
