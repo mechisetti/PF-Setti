@@ -111,10 +111,8 @@ ul{
    list-style-type: none;
 }
  
- 
 /*Fin de estilos generales*/
- 
- 
+  
 /*inicio estilos index*/
 
 .bienvenida {
@@ -138,15 +136,15 @@ ul{
        width: 222rem;
        height: 43rem;  
     } 
- }
+}
 
- @media screen and (max-width:399px) {
+@media screen and (max-width:399px) {
     .bienvenida .cinque-terre {  
        width: 222rem;
        height: 28rem;
        padding-right: 0rem;  
     } 
- }
+}
  
 .aproximacion-inicial {
     display: flex;
@@ -246,7 +244,7 @@ ul{
     .bienvenida {
      padding: 2rem;
     }
- }
+}
  
 .aproximacion-inicial {
     justify-self: stretch; 
@@ -269,7 +267,6 @@ ul{
 }
 
 /*Fin estilos index*/
-
 
 /* inicio estilos sobre mi*/
 
@@ -294,7 +291,6 @@ ul{
      align-items: center;
   }
 }
-
   
 .titulo-sobre-mi{
    grid-area: titulo;
@@ -365,6 +361,12 @@ margin-top: 3rem;
    margin: 0.5rem;
    background-color: #efebce;
    transform: scale(1.1 , 1.1);
+}
+
+.tips-y-recomendaciones img {
+    width: 30rem;
+    height: 22rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width:768px) {
@@ -526,23 +528,22 @@ margin-top: 3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-}
+    }
     .galeria-imagenes-y-fotos div:hover {
-      transform: scale(0.9 , 0.9);
-      }
+        transform: scale(0.9 , 0.9);
+    }
 
-      .videos {
+    .videos {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-      }
+    }
 }
 
 /*Fin estilos Galerias*/
 
 /*inicio estilos Contacto*/
-
 
 .titulo-form {
     margin-left: 2rem;
@@ -551,16 +552,16 @@ margin-top: 3rem;
 
 @media screen and (max-width:768px) {
 .titulo-principal-form {
-font-size: 4rem;
-text-align: center;
-}
+    font-size: 4rem;
+    text-align: center;
+ }
 
 .titulo-form {
-   margin-left: 1rem;
-   margin-top: 1rem;
-   margin-right: 1rem;
-   font-size: 2rem;
-   }
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+ }
   
 }
 
@@ -570,9 +571,9 @@ fieldset {
 }
 
 .info-contacto{
-   font-size: 2.5rem;
-   text-decoration: underline;
-   margin: 1rem;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin: 1rem;
 }
 
 label {
@@ -589,14 +590,13 @@ label {
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    }
+}
 
 input {
     width: 90%;
     height: 30px;
     margin: 1.5rem;
     font-size: medium;
-
 }
 
 input:hover {
