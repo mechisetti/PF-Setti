@@ -1,0 +1,19 @@
+{
+  "name": "pre-entrega-2-setti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mechisetti/proyecto-coder-setti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mechisetti/proyecto-coder-setti/issues"
+  },
+  "homepage": "https://github.com/mechisetti/proyecto-coder-setti#readme"
+}

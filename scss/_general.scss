@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:'Montserrat', sans-serif; 
+    background-color: #e9edc9;     
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+ 
+.logo {
+    width: 20rem;
+}
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+ 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav a {
+   list-style-type: none;
+   font-size: 2rem;
+   color: black;
+   text-decoration: none;
+   background-color: #d4e09b;
+   margin: 0.5rem;
+   padding: 1.5rem 2.5rem;
+
+ a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #a3b18a;
+    padding: 1.5rem 2.5rem;
+ } 
+}
+
+h1 {
+    color: #d4a373;
+    font-size: 6rem;
+    font-weight: bold;  
+}
+
+h2 {
+    font-size: 4rem;
+    color: #d5bdaf;
+    margin: 3rem;
+}
+ 
+h3 {
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+p {
+    color: #283618;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: justify;   
+}
+ 
+.letra-mas-fina {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+ 
+.barra-navegacion-pie-pagina li a {
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 1.6;
+    color: black;
+    font-size: 1.5rem;
+
+ a:hover {
+        list-style-type: none;
+        text-decoration: none;
+        line-height: 1.6;
+        color: black;
+        font-size: 1.5rem;
+        font-style: oblique;
+        font-weight: bolder;
+    }
+}
+ 
+footer {
+    background-color: #dda15e ;
+}
+ 
+.derechos {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.5rem;
+}
