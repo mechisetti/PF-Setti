@@ -34,8 +34,7 @@
   div {
     margin: 3rem;}
   .cinque-terre { 
-    width: 260rem; 
-    height: 50rem;
+    @include size (260rem, 50rem);
     padding-right: 2rem;
 }}
  
@@ -45,10 +44,9 @@
     justify-self: stretch; 
     grid-area: aproximacion-inicial;
  img {
-    width: 30rem;
-    height: 22rem;
-    margin-bottom: 2rem;
-}
+  @include size (30rem, 22rem);  
+  margin-bottom: 2rem;
+  }
  div {
     border: solid 0.3rem #d4a373;
     padding: 4rem;
@@ -57,7 +55,6 @@
     text-align: center; 
     justify-content: space-between;
     margin: 0.5rem;
-
 &:hover {
     border: solid 0.3rem #d4a373;
     padding: 4rem;
@@ -82,9 +79,8 @@
 .bienvenida {
      padding: 2rem;
     .cinque-terre {  
-       width: 222rem;
-       height: 28rem;
        padding-right: 0rem;  
+       height: 28rem;
     } 
 }}
 
@@ -105,10 +101,9 @@
         padding: 0rem;
         margin-left: 0rem;
     .cinque-terre {  
-       width: 222rem;
-       height: 43rem;  
-       padding: 1rem;
-    }} 
+         padding: 1rem;
+         max-width: 100%;
+     }} 
     .aproximacion-inicial {
       flex-direction: column;
     div:hover {  

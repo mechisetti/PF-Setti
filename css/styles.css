@@ -223,9 +223,8 @@ footer {
     padding: 2rem;
   }
   .bienvenida .cinque-terre {
-    width: 222rem;
-    height: 28rem;
     padding-right: 0rem;
+    height: 28rem;
   }
 }
 /*@media screen and (max-width:768px) {
@@ -246,9 +245,8 @@ footer {
     margin-left: 0rem;
   }
   .bienvenida .cinque-terre {
-    width: 222rem;
-    height: 43rem;
     padding: 1rem;
+    max-width: 100%;
   }
   .aproximacion-inicial {
     flex-direction: column;
