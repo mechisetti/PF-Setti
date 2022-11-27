@@ -33,7 +33,6 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navbar-nav a {
@@ -45,7 +44,7 @@ ul {
   margin: 0.5rem;
   padding: 1.5rem 2.5rem;
 }
-.navbar-nav a a:hover {
+.navbar-nav a:hover {
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -89,7 +88,7 @@ p {
   color: black;
   font-size: 1.5rem;
 }
-.barra-navegacion-pie-pagina li a a:hover {
+.barra-navegacion-pie-pagina li a:hover {
   list-style-type: none;
   text-decoration: none;
   line-height: 1.6;
@@ -117,24 +116,12 @@ footer {
   grid-template-areas: "header header" "hola hola" "bienvenida bienvenida" "aproximacion-inicial aproximacion-inicial" "footer-index footer-index";
 }
 
-@media screen and (max-width: 768px) {
-  .container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 2fr auto;
-    gap: 1px 1px;
-  }
-}
 .header {
-  justify-self: stretch;
+  display: flex;
+  flex-direction: row;
   grid-area: header;
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-  }
-}
 .hola {
   margin-left: 3rem;
   margin-top: 0.5rem;
@@ -160,31 +147,6 @@ footer {
   padding-right: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .bienvenida {
-    flex-direction: column;
-    padding: 3rem;
-    margin-left: 0rem;
-  }
-}
-@media screen and (max-width: 399px) {
-  .bienvenida {
-    padding: 2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .bienvenida .cinque-terre {
-    width: 222rem;
-    height: 43rem;
-  }
-}
-@media screen and (max-width: 399px) {
-  .bienvenida .cinque-terre {
-    width: 222rem;
-    height: 28rem;
-    padding-right: 0rem;
-  }
-}
 .aproximacion-inicial {
   display: flex;
   margin: 1rem;
@@ -217,6 +179,37 @@ footer {
   transform: scale(1.1, 1.1);
 }
 
+.footer-index {
+  grid-area: footer-index;
+}
+.footer-index li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 399px) {
+  .bienvenida {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  .bienvenida .cinque-terre {
+    width: 222rem;
+    height: 28rem;
+    padding-right: 0rem;
+  }
+}
+/*@media screen and (max-width:768px) {
+   .header {
+     flex-direction: column;
+   }
+}*/
+@media screen and (max-width: 768px) {
+  .bienvenida .cinque-terre {
+    width: 222rem;
+    height: 43rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .aproximacion-inicial {
     flex-direction: column;
@@ -227,14 +220,26 @@ footer {
     transform: scale(0.95, 0.95);
   }
 }
-.footer-index {
-  grid-area: footer-index;
+@media screen and (max-width: 768px) {
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 2fr auto;
+    gap: 1px 1px;
+  }
 }
-.footer-index li {
-  text-decoration: none;
-  list-style-type: none;
+@media screen and (max-width: 768px) {
+  .bienvenida {
+    flex-direction: column;
+    padding: 3rem;
+    margin-left: 0rem;
+  }
 }
-
+@media screen and (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+  }
+}
 .texto-y-foto-sobre-mi {
   display: grid;
   grid-template-areas: "foto titulo" "foto texto";
