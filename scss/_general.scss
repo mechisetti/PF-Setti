@@ -110,3 +110,16 @@ footer {
     text-align: center;
     font-size: 1.5rem;
 }
+
+@media screen and (max-width:990px){
+    
+    .navbar-nav a {
+        font-size: 1.5rem;
+        margin: 0.3rem;
+        padding: 1rem 2rem;
+     
+      &:hover {
+        padding: 1.2rem 2.2rem;
+      } 
+    
+    }}
