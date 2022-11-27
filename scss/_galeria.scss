@@ -2,9 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+   section {
+    width: 42rem;
+    margin-bottom: 4rem;
+    border: solid 0.3rem #d4a373;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    background-color: white;
  }
+   }
  
- .carousel1 {
+/* .carousel1 {
     width: 42rem;
     margin-bottom: 4rem;
     border: solid 0.3rem #d4a373;
@@ -29,35 +37,16 @@
     padding: 2rem;
     padding-bottom: 10rem;
     background-color: white;
- }
+ } */
  
- @media screen and (max-width:768px) {
-    .carousel1 {
-       margin: 2rem;
-       flex-direction: column;
-       align-items: center;
-     }  
- 
-    .carousel2 {
-       margin: 2rem;
-       flex-direction: column;
-       align-items: center;
-    }  
- 
-    .carousel3 {
-       margin: 2rem;
-       flex-direction: column;
-       align-items: center;  
-    }  
- }
- 
- .titulo-carousel {
+  
+.titulo-carousel {
     font-size: 2rem;
     font-weight: bold;
     color: white;
- }
+}
  
- .explicacion {
+.explicacion {
     font-size: 1.5rem;
     font-style: oblique;
     font-weight: bold;
@@ -90,20 +79,24 @@
       transform: scale(1.1 , 1.1);
    }
 }
- 
+
 @media screen and (max-width:768px) {
-     .galeria-imagenes-y-fotos {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-     }
-     .galeria-imagenes-y-fotos div:hover {
-         transform: scale(0.9 , 0.9);
-     }
-     .videos {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         max-width: 100%;
-     }
- }
+   .carouseles section {
+      margin: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }   
+   .galeria-imagenes-y-fotos {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   div:hover {
+       transform: scale(0.9 , 0.9);
+   }}
+   .videos {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       max-width: 100%;
+   }
+}
