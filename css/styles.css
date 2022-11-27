@@ -236,14 +236,6 @@ footer {
   margin: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .texto-y-foto-sobre-mi {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
 .titulo-sobre-mi {
   grid-area: titulo;
   justify-items: center;
@@ -253,13 +245,6 @@ footer {
   margin-top: 6rem;
 }
 
-@media screen and (max-width: 768px) {
-  .titulo-sobre-mi {
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-    animation: none;
-  }
-}
 .imagen-personal {
   grid-area: foto;
   justify-items: center;
@@ -276,6 +261,19 @@ footer {
   grid-area: texto;
 }
 
+@media screen and (max-width: 768px) {
+  .texto-y-foto-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .titulo-sobre-mi {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    animation: none;
+  }
+}
 .tips-y-recomendaciones {
   display: flex;
   margin: 1rem;
