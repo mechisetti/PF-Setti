@@ -12,8 +12,6 @@
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
     grid-area: header;
 }
 
@@ -31,6 +29,7 @@
     margin-left: 3rem;
     justify-self: center; 
     align-self: center; 
+
     grid-area: bienvenida; 
   div {
     margin: 3rem;}
@@ -80,17 +79,14 @@
 } }
 
 @media screen and (max-width:399px) {
-    .bienvenida {
+.bienvenida {
      padding: 2rem;
-    }
-}
-@media screen and (max-width:399px) {
-    .bienvenida .cinque-terre {  
+    .cinque-terre {  
        width: 222rem;
        height: 28rem;
        padding-right: 0rem;  
     } 
-}
+}}
 
 /*@media screen and (max-width:768px) {
    .header {
@@ -99,38 +95,24 @@
 }*/
 
 @media screen and (max-width:768px) {
-    .bienvenida .cinque-terre {  
+    .container1 {
+        grid-template-rows: .1fr .1fr 0.5fr 2fr auto;  
+    }
+    .header {align-items:flex-start
+    }
+    .bienvenida {
+        flex-direction: column;
+        padding: 0rem;
+        margin-left: 0rem;
+    .cinque-terre {  
        width: 222rem;
        height: 43rem;  
-    } 
-}
-@media screen and (max-width:768px) {
+       padding: 1rem;
+    }} 
     .aproximacion-inicial {
       flex-direction: column;
-   }
- }
- @media screen and (max-width:768px) {
-    .aproximacion-inicial div:hover {  
+    div:hover {  
        transform: scale(0.95 , 0.95);  
-    } 
- }
+    } }}
 
- @media screen and (max-width: 768px) {
-    .container1 {
-          display: grid; 
-          grid-template-columns: 1fr 1fr; 
-          grid-template-rows: .1fr .1fr 0.5fr 2fr auto;
-          gap: 1px 1px; 
-    }
- }
- @media screen and (max-width:768px) {
-    .bienvenida {
-      flex-direction: column;
-      padding: 3rem;
-      margin-left: 0rem;
-    }
- }
-
- @media screen and (max-width:768px) {
- .header {align-items:flex-start
- }}
+ 

@@ -33,6 +33,7 @@ ul{
 .header {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .navbar-nav a {

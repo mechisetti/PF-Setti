@@ -33,6 +33,7 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .navbar-nav a {
@@ -117,8 +118,6 @@ footer {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
   grid-area: header;
 }
 
@@ -191,8 +190,6 @@ footer {
   .bienvenida {
     padding: 2rem;
   }
-}
-@media screen and (max-width: 399px) {
   .bienvenida .cinque-terre {
     width: 222rem;
     height: 28rem;
@@ -205,39 +202,27 @@ footer {
    }
 }*/
 @media screen and (max-width: 768px) {
+  .container1 {
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 2fr auto;
+  }
+  .header {
+    align-items: flex-start;
+  }
+  .bienvenida {
+    flex-direction: column;
+    padding: 0rem;
+    margin-left: 0rem;
+  }
   .bienvenida .cinque-terre {
     width: 222rem;
     height: 43rem;
+    padding: 1rem;
   }
-}
-@media screen and (max-width: 768px) {
   .aproximacion-inicial {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 768px) {
   .aproximacion-inicial div:hover {
     transform: scale(0.95, 0.95);
-  }
-}
-@media screen and (max-width: 768px) {
-  .container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 2fr auto;
-    gap: 1px 1px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .bienvenida {
-    flex-direction: column;
-    padding: 3rem;
-    margin-left: 0rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
-    align-items: flex-start;
   }
 }
 .texto-y-foto-sobre-mi {
