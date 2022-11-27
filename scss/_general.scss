@@ -123,3 +123,27 @@ footer {
       } 
     
     }}
+
+@media screen and (max-width:768px) {
+        h1{
+            font-size: 5rem;
+        }
+        h2 {
+            font-size: 3.5rem;
+        }
+    }
+
+@media screen and (max-width:399px) {
+        h1{
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .letra-mas-fina {
+            font-size: 1.5rem;
+        }
+    }
