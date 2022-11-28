@@ -85,16 +85,12 @@
       align-items: center;
     }   
    .galeria-imagenes-y-fotos {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+      @include flex-column-center;
    div:hover {
        transform: scale(0.9 , 0.9);
    }}
    .videos {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
+       @include flex-column-center;
        max-width: 100%;
    }
 }

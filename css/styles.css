@@ -489,7 +489,7 @@ footer {
   .galeria-imagenes-y-fotos {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
   .galeria-imagenes-y-fotos div:hover {
     transform: scale(0.9, 0.9);
@@ -497,7 +497,7 @@ footer {
   .videos {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     max-width: 100%;
   }
 }

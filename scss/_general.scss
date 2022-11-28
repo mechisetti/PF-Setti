@@ -116,6 +116,12 @@ footer {
     height: $height;
   }
 
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}  
+
 @media screen and (max-width:990px){
     
     .navbar-nav a {
