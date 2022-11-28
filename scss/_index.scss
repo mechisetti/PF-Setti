@@ -80,9 +80,12 @@
      padding: 2rem;
     .cinque-terre {  
        padding-right: 0rem;  
-       height: 28rem;
-    } 
-}}
+       height: 26rem;
+    }}
+.aproximacion-inicial img {
+  @include size (24rem, 18rem);
+} 
+}
 
 /*@media screen and (max-width:768px) {
    .header {

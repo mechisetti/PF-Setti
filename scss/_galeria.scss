@@ -55,13 +55,11 @@
  }
  
  .galeria-imagenes-y-fotos img {
-    width: 40rem;
-    height: 30rem;
+   @include size (40rem, 30rem);
  }
  
  .videos iframe {
-    width: 40rem;
-    height: 30rem;
+   @include size (40rem, 30rem); 
  }
  
  .galeria-imagenes-y-fotos div {
@@ -100,3 +98,12 @@
        max-width: 100%;
    }
 }
+@media screen and (max-width: 329px){
+   .galeria-imagenes-y-fotos img {
+      @include size (35rem, 23rem);
+    }
+    
+    .videos iframe {
+      @include size (35rem, 23rem); 
+    }   
+} 
