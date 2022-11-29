@@ -1,6 +1,5 @@
 .titulo-form {
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 fieldset {
@@ -17,9 +16,7 @@ fieldset {
 label {
     font-size: 2rem;
     line-height: 1.6;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0rem 2rem 1rem;
 }
 
 .formulario-contacto {
@@ -31,19 +28,16 @@ label {
 }
 
 input {
-    width: 90%;
-    height: 30px;
+    @include size (90% 30px);
     margin: 1.5rem;
     font-size: medium;
 &:hover {
-    width: 90%;
-    height: 40px;
+    @include size (90% 40px);
     margin: 0.5rem;
     background-color: #f4f3ee
 }
 &:focus {
-   width: 90%;
-   height: 40px;
+   @include size (90% 40px);
    margin: 0.5rem;   
 }}
 
@@ -52,8 +46,7 @@ input {
 }
 
 textarea {
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 0rem 0rem 2rem 1.5rem;
     width: 90%;
 &:hover {
     margin-left: 1.5rem;
@@ -73,9 +66,7 @@ textarea {
         text-align: center;
     }    
     .titulo-form {
-        margin-left: 1rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
+        margin: 1rem 1rem 0rem 1rem;
         font-size: 2rem;
      }
     .formulario-contacto {

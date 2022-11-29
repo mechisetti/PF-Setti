@@ -16,8 +16,7 @@
 }
 
 .hola {
-    margin-left: 3rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0rem 0rem 3rem; 
     justify-self: start; 
     align-self: stretch; 
     grid-area: hola; 
@@ -29,7 +28,6 @@
     margin-left: 3rem;
     justify-self: center; 
     align-self: center; 
-
     grid-area: bienvenida; 
   div {
     margin: 3rem;}
@@ -50,17 +48,13 @@
  div {
     border: solid 0.3rem #d4a373;
     padding: 4rem;
-    display: inline-block;
-    overflow: hidden;
-    text-align: center; 
+    @include inline;
     justify-content: space-between;
     margin: 0.5rem;
 &:hover {
     border: solid 0.3rem #d4a373;
     padding: 4rem;
-    display: inline-block;
-    overflow: hidden;
-    text-align: center; 
+    @include inline;
     justify-content: space-between;
     margin: 0.5rem;
     background-color: #efebce;

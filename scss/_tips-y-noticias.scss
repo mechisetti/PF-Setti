@@ -5,17 +5,13 @@
     div {
         border: solid 0.3rem #d4a373;
         padding: 4rem;
-        display: inline-block;
-        overflow: hidden;
-        text-align: center; 
+        @include inline;
         justify-content: space-between;
         margin: 0.5rem;
     &:hover {
        border: solid 0.3rem #d4a373;
        padding: 4rem;
-       display: inline-block;
-       overflow: hidden;
-       text-align: center; 
+       @include inline;
        justify-content: space-between;
        margin: 0.5rem;
        background-color: #efebce;
@@ -33,17 +29,13 @@
     div {
         border: solid 0.3rem #d4a373;
         padding: 4rem;
-        display: inline-block;
-        overflow: hidden;
-        text-align: center; 
+        @include inline;
         justify-content: center;
         margin: 0.5rem;  
     &:hover {
        border: solid 0.3rem #d4a373;
        padding: 4rem;
-       display: inline-block;
-       overflow: hidden;
-       text-align: center; 
+       @include inline;
        justify-content: center;
        margin: 0.5rem;
        background-color: #efebce;
