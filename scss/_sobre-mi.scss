@@ -1,49 +1,49 @@
 .texto-y-foto-sobre-mi {
-    display: grid;
-    grid-template-areas: 
-    "foto titulo"
-    "foto texto";
-    grid-template-columns: 385px 800px;
-    grid-template-rows: 300px 350px;
-    grid-column-gap: 6rem;
-    grid-row-gap: 1rem;
-    border: solid #dda15e;
-    margin: 2rem;
+  display: grid;
+  grid-template-areas: 
+  "foto titulo"
+  "foto texto";
+  grid-template-columns: 385px 800px;
+  grid-template-rows: 300px 350px;
+  grid-column-gap: 6rem;
+  grid-row-gap: 1rem;
+  border: solid #dda15e;
+  margin: 2rem;
 }
-   
+ 
 .titulo-sobre-mi{
-    grid-area: titulo;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    margin: 6rem 0rem 0rem 1rem;
+  grid-area: titulo;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: 6rem 0rem 0rem 1rem;
 }
- 
+
 .imagen-personal {
- grid-area: foto;
- justify-items: center;
- justify-content: center;
- align-items: center;
- align-content: center;
- padding: 4rem;
- margin-top: 3rem;
+grid-area: foto;
+justify-items: center;
+justify-content: center;
+align-items: center;
+align-content: center;
+padding: 4rem;
+margin-top: 3rem;
 }
- 
+
 .sobre-mi {
-     font-weight: 400;
-     margin: 0.5rem 2rem;
-     grid-area: texto; 
+   font-weight: 400;
+   margin: 0.5rem 2rem;
+   grid-area: texto; 
 }
 
 @media screen and (max-width:768px) {
-   .texto-y-foto-sobre-mi {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     align-items: center;
-  }
-   .titulo-sobre-mi {
-     margin: 3rem 0rem 0rem 0.5rem;
-     animation: none;
-   }
+ .texto-y-foto-sobre-mi {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+ .titulo-sobre-mi {
+   margin: 3rem 0rem 0rem 0.5rem;
+   animation: none;
+ }
 }

@@ -1,76 +1,76 @@
 .carouseles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-   section {
-    width: 42rem;
-    margin-bottom: 4rem;
-    border: solid 0.3rem #d4a373;
-    padding: 2rem 2rem 10rem;
-    background-color: white;
- }
-   }
-  
-.titulo-carousel {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+  section {
+   width: 42rem;
+   margin-bottom: 4rem;
+   border: solid 0.3rem #d4a373;
+   padding: 2rem 2rem 10rem;
+   background-color: white;
 }
+  }
  
+.titulo-carousel {
+   font-size: 2rem;
+   font-weight: bold;
+   color: white;
+}
+
 .explicacion {
-    font-size: 1.5rem;
-    font-style: oblique;
-    font-weight: bold;
-    color: #f4f1de;
-    text-align: inherit;   
- }
- 
- .galeria-imagenes-y-fotos img {
-   @include size (40rem, 30rem);
- }
- 
- .videos iframe {
-   @include size (40rem, 30rem); 
- }
- 
- .galeria-imagenes-y-fotos div {
+   font-size: 1.5rem;
+   font-style: oblique;
+   font-weight: bold;
+   color: #f4f1de;
+   text-align: inherit;   
+}
+
+.galeria-imagenes-y-fotos img {
+  @include size (40rem, 30rem);
+}
+
+.videos iframe {
+  @include size (40rem, 30rem); 
+}
+
+.galeria-imagenes-y-fotos div {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center; 
+    justify-content: space-between;
+    margin: 2rem;    
+   div:hover {
      display: inline-block;
      overflow: hidden;
      text-align: center; 
      justify-content: space-between;
      margin: 2rem;    
-    div:hover {
-      display: inline-block;
-      overflow: hidden;
-      text-align: center; 
-      justify-content: space-between;
-      margin: 2rem;    
-      transform: scale(1.1 , 1.1);
-   }
+     transform: scale(1.1 , 1.1);
+  }
 }
 
 @media screen and (max-width:768px) {
-   .carouseles section {
-      margin: 2rem;
-      flex-direction: column;
-      align-items: center;
-    }   
-   .galeria-imagenes-y-fotos {
+  .carouseles section {
+     margin: 2rem;
+     flex-direction: column;
+     align-items: center;
+   }   
+  .galeria-imagenes-y-fotos {
+     @include flex-column-center;
+  div:hover {
+      transform: scale(0.9 , 0.9);
+  }}
+  .videos {
       @include flex-column-center;
-   div:hover {
-       transform: scale(0.9 , 0.9);
-   }}
-   .videos {
-       @include flex-column-center;
-       max-width: 100%;
-   }
+      max-width: 100%;
+  }
 }
 @media screen and (max-width: 329px){
-   .galeria-imagenes-y-fotos img {
-      @include size (35rem, 23rem);
-    }
-    
-    .videos iframe {
-      @include size (35rem, 23rem); 
-    }   
+  .galeria-imagenes-y-fotos img {
+     @include size (35rem, 23rem);
+   }
+   
+   .videos iframe {
+     @include size (35rem, 23rem); 
+   }   
 } 

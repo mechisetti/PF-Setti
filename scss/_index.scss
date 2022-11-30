@@ -1,110 +1,108 @@
 .container1 {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: .1fr .1fr 1.5fr 1.5fr .1fr;
-    gap: 1px 1px; 
-    grid-template-areas: 
-      "header header"
-      "hola hola"
-      "bienvenida bienvenida"
-      "aproximacion-inicial aproximacion-inicial"
-      "footer-index footer-index";     
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: .1fr .1fr 1.5fr 1.5fr .1fr;
+  gap: 1px 1px; 
+  grid-template-areas: 
+    "header header"
+    "hola hola"
+    "bienvenida bienvenida"
+    "aproximacion-inicial aproximacion-inicial"
+    "footer-index footer-index";     
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .hola {
-    margin: 0.5rem 0rem 0rem 3rem; 
-    justify-self: start; 
-    align-self: stretch; 
-    grid-area: hola; 
+  margin: 0.5rem 0rem 0rem 3rem; 
+  justify-self: start; 
+  align-self: stretch; 
+  grid-area: hola; 
 }
 
 .bienvenida {
-    display: flex;
-    justify-content: center;
-    margin-left: 3rem;
-    justify-self: center; 
-    align-self: center; 
-    grid-area: bienvenida; 
-  div {
-    margin: 3rem;}
-  .cinque-terre { 
-    @include size (260rem, 50rem);
-    padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 3rem;
+  justify-self: center; 
+  align-self: center; 
+  grid-area: bienvenida; 
+div {
+  margin: 3rem;}
+.cinque-terre { 
+  @include size (260rem, 50rem);
+  padding-right: 2rem;
 }}
- 
+
 .aproximacion-inicial {
-    display: flex;
-    margin: 1rem;
-    justify-self: stretch; 
-    grid-area: aproximacion-inicial;
- img {
-  @include size (30rem, 22rem);  
-  margin-bottom: 2rem;
-  }
- div {
-    border: solid 0.3rem #d4a373;
-    padding: 4rem;
-    @include inline;
-    justify-content: space-between;
-    margin: 0.5rem;
+  display: flex;
+  margin: 1rem;
+  justify-self: stretch; 
+  grid-area: aproximacion-inicial;
+img {
+@include size (30rem, 22rem);  
+margin-bottom: 2rem;
+}
+div {
+  border: solid 0.3rem #d4a373;
+  padding: 4rem;
+  @include inline;
+  justify-content: space-between;
+  margin: 0.5rem;
 &:hover {
-    border: solid 0.3rem #d4a373;
-    padding: 4rem;
-    @include inline;
-    justify-content: space-between;
-    margin: 0.5rem;
-    background-color: #efebce;
-    transform: scale(1.1 , 1.1);
+  border: solid 0.3rem #d4a373;
+  padding: 4rem;
+  @include inline;
+  justify-content: space-between;
+  margin: 0.5rem;
+  background-color: #efebce;
+  transform: scale(1.1 , 1.1);
 
 }}}
-  
+
 .footer-index { 
-   grid-area: footer-index;
- li {
-   text-decoration: none;
-   list-style-type: none;
+ grid-area: footer-index;
+li {
+ text-decoration: none;
+ list-style-type: none;
 } }
 
 @media screen and (max-width:399px) {
 .bienvenida {
-     padding: 2rem;
-    .cinque-terre {  
-       padding-right: 0rem;  
-       height: 26rem;
-    }}
+   padding: 2rem;
+  .cinque-terre {  
+     padding-right: 0rem;  
+     height: 26rem;
+  }}
 .aproximacion-inicial img {
-  @include size (24rem, 18rem);
+@include size (24rem, 18rem);
 } 
 }
 
 /*@media screen and (max-width:768px) {
-   .header {
-     flex-direction: column;
-   }
+ .header {
+   flex-direction: column;
+ }
 }*/
 
 @media screen and (max-width:768px) {
-    .container1 {
-        grid-template-rows: .1fr .1fr 0.5fr 2fr auto;  
-    }
-    .header {align-items:flex-start
-    }
-    .bienvenida {
-        flex-direction: column;
-        padding: 0rem;
-        margin-left: 0rem;
-    .cinque-terre {  
-         padding: 1rem;
-         max-width: 100%;
-     }} 
-    .aproximacion-inicial {
+  .container1 {
+      grid-template-rows: .1fr .1fr 0.5fr 2fr auto;  
+  }
+  .header {align-items:flex-start
+  }
+  .bienvenida {
       flex-direction: column;
-    div:hover {  
-       transform: scale(0.95 , 0.95);  
-    } }}
-
- 
+      padding: 0rem;
+      margin-left: 0rem;
+  .cinque-terre {  
+       padding: 1rem;
+       max-width: 100%;
+   }} 
+  .aproximacion-inicial {
+    flex-direction: column;
+  div:hover {  
+     transform: scale(0.95 , 0.95);  
+  } }}
