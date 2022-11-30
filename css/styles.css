@@ -258,6 +258,10 @@ footer {
     transform: scale(0.95, 0.95);
   }
 }
+.bienvenidos {
+  margin: 2rem 0rem 4rem 4rem;
+}
+
 .texto-y-foto-sobre-mi {
   display: grid;
   grid-template-areas: "foto titulo" "foto texto";
@@ -305,6 +309,10 @@ footer {
     animation: none;
   }
 }
+.mundo {
+  margin: 2rem 0rem 4rem 2.5rem;
+}
+
 .tips-y-recomendaciones {
   display: flex;
   margin: 1rem;
@@ -397,6 +405,10 @@ footer {
     height: 17rem;
   }
 }
+.viajemos {
+  margin: 2rem 0rem 4rem 4rem;
+}
+
 .carouseles {
   display: flex;
   flex-wrap: wrap;
