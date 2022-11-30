@@ -72,12 +72,6 @@ li {
 } 
 }
 
-/*@media screen and (max-width:768px) {
- .header {
-   flex-direction: column;
- }
-}*/
-
 @media screen and (max-width:768px) {
   .container1 {
       grid-template-rows: .1fr .1fr 0.5fr 2fr auto;  
