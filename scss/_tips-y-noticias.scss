@@ -38,6 +38,11 @@
 }
 
 @media screen and (max-width:768px) {
+    .mundo {
+        font-size: 4rem;
+        text-align: center;
+        margin: 1rem 0rem 2rem 0rem;
+    }
     .tips-y-recomendaciones {
       flex-direction: column;
      div:hover {  
