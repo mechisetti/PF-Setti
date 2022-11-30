@@ -144,7 +144,7 @@ footer {
 .container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.1fr 0.1fr 1.5fr 1.5fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 1.3fr 1.5fr 0.1fr;
   gap: 1px 1px;
   grid-template-areas: "header header" "hola hola" "bienvenida bienvenida" "aproximacion-inicial aproximacion-inicial" "footer-index footer-index";
 }
