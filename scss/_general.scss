@@ -73,12 +73,14 @@ h3 {
 
 p {
     color: #283618;
-    @include font (bold, 2rem);
+    font-weight: bold;
+    font-size: 2rem;
     text-align: justify;   
 }
  
 .letra-mas-fina {
-    @include font (lighter, 2rem);
+    font-weight: lighter;
+    font-size: 2rem;
 }
  
 .barra-navegacion-pie-pagina li a {
@@ -94,7 +96,8 @@ p {
         line-height: 1.6;
         color: black;
         font-style: oblique;
-        @include font (bolder, 1.5rem);
+        font-weight: bolder;
+        font-size: 1.5rem;
     }
 }
  
@@ -103,30 +106,12 @@ footer {
 }
  
 .derechos {
-    @include font (lighter, 1.5rem);
+    font-weight: lighter;
+    font-size: 1.5rem;
     text-align: center;
 }
 
-@mixin size($width, $height) {
-    width: $width;
-    height: $height;
-  }
 
-@mixin flex-column-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-}  
-@mixin font ($weight, $size) {
-    font-weight: $weight;
-    font-size: $size;
-}
-
-@mixin inline {
-    display: inline-block;
-    overflow: hidden;
-    text-align: center;
-}
 
 @media screen and (max-width:990px){  
     .navbar-nav a {

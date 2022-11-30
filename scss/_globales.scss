@@ -1,0 +1,17 @@
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+  }
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}  
+
+@mixin inline {
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}

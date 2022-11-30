@@ -28,16 +28,16 @@ label {
 }
 
 input {
-    @include size (90% 30px);
+    @include size (90%, 30px);
     margin: 1.5rem;
     font-size: medium;
 &:hover {
-    @include size (90% 40px);
+    @include size (90%, 40px);
     margin: 0.5rem;
     background-color: #f4f3ee
 }
 &:focus {
-   @include size (90% 40px);
+   @include size (90%, 40px);
    margin: 0.5rem;   
 }}
 
