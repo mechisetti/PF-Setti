@@ -15,3 +15,11 @@
     overflow: hidden;
     text-align: center;
 }
+
+.viajar-sola {
+  border: solid 0.3rem #d4a373;
+  padding: 4rem;
+  @include inline;
+  justify-content: space-between;
+  margin: 0.5rem;
+}

@@ -7,17 +7,9 @@
     margin: 1rem;
 
     div {
-        border: solid 0.3rem #d4a373;
-        padding: 4rem;
-        @include inline;
-        justify-content: space-between;
-        margin: 0.5rem;
+        @extend .viajar-sola;
     &:hover {
-       border: solid 0.3rem #d4a373;
-       padding: 4rem;
-       @include inline;
-       justify-content: space-between;
-       margin: 0.5rem;
+       @extend .viajar-sola;
        background-color: #efebce;
        transform: scale(1.1 , 1.1);
     }}
@@ -31,17 +23,9 @@
     justify-content: center;
     margin: 1rem;
     div {
-        border: solid 0.3rem #d4a373;
-        padding: 4rem;
-        @include inline;
-        justify-content: center;
-        margin: 0.5rem;  
+       @extend .viajar-sola;  
     &:hover {
-       border: solid 0.3rem #d4a373;
-       padding: 4rem;
-       @include inline;
-       justify-content: center;
-       margin: 0.5rem;
+       @extend .viajar-sola;
        background-color: #efebce;
        transform: scale(1.1 , 1.1); 
     }}

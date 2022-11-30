@@ -141,6 +141,16 @@ footer {
     font-size: 1.5rem;
   }
 }
+.viajar-sola, .noticias div:hover, .noticias div, .tips-y-recomendaciones div:hover, .tips-y-recomendaciones div, .aproximacion-inicial div:hover, .aproximacion-inicial div {
+  border: solid 0.3rem #d4a373;
+  padding: 4rem;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
 .container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -188,23 +198,7 @@ footer {
   height: 22rem;
   margin-bottom: 2rem;
 }
-.aproximacion-inicial div {
-  border: solid 0.3rem #d4a373;
-  padding: 4rem;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  justify-content: space-between;
-  margin: 0.5rem;
-}
 .aproximacion-inicial div:hover {
-  border: solid 0.3rem #d4a373;
-  padding: 4rem;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  justify-content: space-between;
-  margin: 0.5rem;
   background-color: #efebce;
   transform: scale(1.1, 1.1);
 }
@@ -317,23 +311,7 @@ footer {
   display: flex;
   margin: 1rem;
 }
-.tips-y-recomendaciones div {
-  border: solid 0.3rem #d4a373;
-  padding: 4rem;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  justify-content: space-between;
-  margin: 0.5rem;
-}
 .tips-y-recomendaciones div:hover {
-  border: solid 0.3rem #d4a373;
-  padding: 4rem;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  justify-content: space-between;
-  margin: 0.5rem;
   background-color: #efebce;
   transform: scale(1.1, 1.1);
 }
@@ -348,23 +326,7 @@ footer {
   justify-content: center;
   margin: 1rem;
 }
-.noticias div {
-  border: solid 0.3rem #d4a373;
-  padding: 4rem;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  justify-content: center;
-  margin: 0.5rem;
-}
 .noticias div:hover {
-  border: solid 0.3rem #d4a373;
-  padding: 4rem;
-  display: inline-block;
-  overflow: hidden;
-  text-align: center;
-  justify-content: center;
-  margin: 0.5rem;
   background-color: #efebce;
   transform: scale(1.1, 1.1);
 }
