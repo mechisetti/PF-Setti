@@ -36,7 +36,12 @@ ul{
     flex-direction: row;
 }
 
-.navbar-nav a {
+.navbar-nav { 
+   img {
+     width: 35px;
+     height: 35px;
+    }
+   a {
    list-style-type: none;
    font-size: 2rem;
    color: black;
@@ -52,7 +57,7 @@ ul{
     background-color: #a3b18a;
     padding: 1.5rem 2.5rem;
  } 
-}
+}}
 
 h1 {
     color: #d4a373;

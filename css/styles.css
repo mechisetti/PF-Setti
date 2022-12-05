@@ -36,6 +36,10 @@ ul {
   flex-direction: row;
 }
 
+.navbar-nav img {
+  width: 35px;
+  height: 35px;
+}
 .navbar-nav a {
   list-style-type: none;
   font-size: 2rem;
@@ -224,11 +228,6 @@ footer {
     height: 18rem;
   }
 }
-/*@media screen and (max-width:768px) {
- .header {
-   flex-direction: column;
- }
-}*/
 @media screen and (max-width: 768px) {
   .container1 {
     grid-template-rows: 0.1fr 0.1fr 0.5fr 2fr auto;
