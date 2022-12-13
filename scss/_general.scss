@@ -43,16 +43,16 @@ ul{
      width: 35px;
      height: 35px;
     }
-   a {
-   list-style-type: none;
-   font-size: 2rem;
-   color: black;
-   text-decoration: none;
-   background-color: #d4e09b;
-   margin: 0.5rem;
-   padding: 1.5rem 2.5rem;
+    a {
+     list-style-type: none;
+     font-size: 2rem;
+     color: black;
+     text-decoration: none;
+     background-color: #d4e09b;
+     margin: 0.5rem;
+     padding: 1.5rem 2.5rem;
 
- &:hover {
+&:hover {
     color: black;
     font-weight: bold;
     text-decoration: none;

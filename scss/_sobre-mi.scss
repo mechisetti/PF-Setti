@@ -39,15 +39,22 @@ margin-top: 3rem;
    grid-area: texto; 
 }
 
-@media screen and (max-width:768px) {
- .texto-y-foto-sobre-mi {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-}
- .titulo-sobre-mi {
-   margin: 0rem 0rem 3rem 1.5rem;
-   animation: none;
+@media screen and (max-width:1313px) {
+  .texto-y-foto-sobre-mi{
+    grid-template-columns: 450px 770px;
+    grid-template-rows: 300px 287px;
+    grid-column-gap: 0rem;
+}}
+
+@media screen and (max-width:1269px) {
+  .texto-y-foto-sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
  }
-}
+ .titulo-sobre-mi {
+  margin: 0rem 0rem 3rem 1.5rem;
+  animation: none;
+}}
+

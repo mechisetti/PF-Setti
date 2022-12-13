@@ -292,7 +292,14 @@ footer {
   grid-area: texto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1313px) {
+  .texto-y-foto-sobre-mi {
+    grid-template-columns: 450px 770px;
+    grid-template-rows: 300px 287px;
+    grid-column-gap: 0rem;
+  }
+}
+@media screen and (max-width: 1269px) {
   .texto-y-foto-sobre-mi {
     display: flex;
     flex-direction: column;
