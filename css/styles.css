@@ -230,7 +230,7 @@ footer {
     height: 18rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .container1 {
     grid-template-rows: 0.1fr 0.1fr 0.5fr 2fr auto;
   }
